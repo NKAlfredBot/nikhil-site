@@ -3,9 +3,14 @@ import type { NextConfig } from "next";
 const isExport = process.env.NEXT_OUTPUT === "export";
 
 const nextConfig: NextConfig = {
-  ...(isExport ? { output: "export" } : {}),
+  ...(isExport
+    ? {
+        output: "export",
+        basePath: "/nikhil-site",
+      }
+    : {}),
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
 };
 
