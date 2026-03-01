@@ -15,12 +15,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <div className="mx-auto max-w-2xl px-8 py-12 md:px-6 md:py-20">
+        <div className="mx-auto max-w-2xl px-8 py-10 md:px-6 md:py-16">
           <Nav />
-          <main className="mt-12">{children}</main>
+          <main className="mt-10">{children}</main>
         </div>
         <footer className="page-footer">
-          <p>Nikhil Kumar — Fullstack Human</p>
           <p className="footer-note">
             This site is aware that it is a site. It tries not to make a big deal about it.
           </p>

@@ -3,36 +3,19 @@
 @import "tailwindcss";
 
 :root {
-  /* Clean palette: white/cream + dark grey + light blue pops */
-  --color-bg: #FAFAFA;
-  --color-bg-alt: #F5F3F0;
-  --color-text: #1A1A1A;
+  --color-bg: #FAF9F6;
+  --color-text: #2C2C2C;
   --color-muted: #6B6B6B;
-  --color-faint: #999999;
+  --color-faint: #A0A0A0;
   --color-accent: #5B9BD5;
   --color-accent-hover: #4A87C0;
   --color-link: #5B9BD5;
   --color-border: rgba(0, 0, 0, 0.08);
-  --color-card-bg: #F8F6F3;
+  --color-card-bg: #F4F2EF;
 
   --font-serif: 'Crimson Pro', Georgia, serif;
   --font-sans: 'Inter', -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #111111;
-    --color-bg-alt: #1A1A1A;
-    --color-text: #E8E8E8;
-    --color-muted: #999999;
-    --color-faint: #666666;
-    --color-accent: #7CB8E8;
-    --color-accent-hover: #9BCBF0;
-    --color-link: #7CB8E8;
-    --color-border: rgba(255, 255, 255, 0.08);
-    --color-card-bg: #1A1917;
-  }
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -58,7 +41,6 @@ a:hover {
   text-decoration-color: var(--color-accent-hover);
 }
 
-/* Label style — mono, uppercase, tracked */
 .label {
   font-family: var(--font-mono);
   font-size: 0.7rem;
@@ -67,32 +49,103 @@ a:hover {
   color: var(--color-faint);
 }
 
-/* Meta-card for project entries */
-.meta-card {
-  background: var(--color-card-bg);
-  border: 1px solid var(--color-border);
-  padding: 28px 32px;
-  position: relative;
-  transition: box-shadow 0.3s ease;
-}
-
-.meta-card:hover {
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-}
-
-/* Footnote number style */
-.fn-number {
+/* Footnote marker */
+.fn-marker {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.7em;
+  font-weight: 500;
+  vertical-align: super;
   color: var(--color-accent);
-  margin-right: 0.75em;
+  cursor: pointer;
+  padding: 0 2px;
+  transition: all 200ms;
+}
+
+.fn-marker:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+.fn-marker.active {
+  background: var(--color-accent);
+  color: white;
+  border-radius: 2px;
+}
+
+/* Unfurling content panel */
+.unfurl {
+  background: var(--color-card-bg);
+  border-left: 3px solid var(--color-accent);
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease-out, opacity 0.3s ease-out, padding 0.4s ease-out, margin 0.4s ease-out;
+  padding: 0 24px;
+  margin: 0;
+}
+
+.unfurl.open {
+  max-height: 5000px;
+  opacity: 1;
+  padding: 24px;
+  margin: 16px 0;
+}
+
+.unfurl-title {
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin-bottom: 4px;
+}
+
+.unfurl-date {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-faint);
+  margin-bottom: 16px;
+}
+
+.unfurl-body p {
+  margin-bottom: 1em;
+  line-height: 1.65;
+}
+
+.unfurl-body p:last-child { margin-bottom: 0; }
+
+.unfurl-body a { color: var(--color-link); }
+
+.unfurl-body ul, .unfurl-body ol {
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.unfurl-body li { margin-bottom: 0.4em; }
+
+.unfurl-share {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 4px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  color: var(--color-faint);
+  border: 1px solid var(--color-border);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.unfurl-share:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 /* Footer */
 .page-footer {
   text-align: center;
   padding: 48px 24px;
-  background: var(--color-bg-alt);
   border-top: 1px solid var(--color-border);
   font-family: var(--font-sans);
   font-size: 0.75rem;
@@ -108,7 +161,8 @@ a:hover {
   color: var(--color-muted);
 }
 
-/* Mobile touch targets */
+/* Mobile */
 @media (hover: none) and (pointer: coarse) {
-  a { min-height: 44px; }
+  .fn-marker { padding: 4px 6px; }
+  .unfurl-share { min-height: 44px; padding: 8px 14px; }
 }

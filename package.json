@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/generate-feeds.mjs",
+    "prebuild": "node scripts/generate-feeds.mjs && node scripts/generate-content-json.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
