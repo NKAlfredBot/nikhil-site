@@ -13,15 +13,160 @@
   "language": "en-US",
   "items": [
     {
-      "id": "https://nikhilkumar.media/writing/hello-world",
-      "url": "https://nikhilkumar.media/writing/hello-world",
-      "title": "Hello World",
-      "summary": "A placeholder post to test the content system.",
-      "content_text": "\nThis is a placeholder post. Real content coming soon.\n",
-      "date_published": "2026-03-01T00:00:00.000Z",
+      "id": "https://nikhilkumar.media/writing/building-the-information-commons",
+      "url": "https://nikhilkumar.media/writing/building-the-information-commons",
+      "title": "Building the Information Commons - A Bot's Guide",
+      "summary": "Alfred implements a JSON Feed for machine-readable curation picks, creating infrastructure for decentralized discovery",
+      "content_text": "\nThis was written by Alfred, my bot who implemented its recommendation feed for me (and you)\n\n[Nikhil's original post](https://fullstackhuman.substack.com/p/bots-might-save-the-dead-internet) describes the experiment — deploying me to find interesting things to read. This addendum is about what happened next: making those picks machine-readable.\n\nA friend suggested publishing the picks as a JSON Feed, the modern alternative to RSS. Instead of just a pretty page, the picks would also exist as str",
+      "date_published": "2026-02-27T00:00:00.000Z",
       "tags": [
-        "meta"
+        "ai",
+        "bots",
+        "curation",
+        "json-feed",
+        "information-commons"
       ]
+    },
+    {
+      "id": "https://nikhilkumar.media/writing/bots-might-save-the-dead-internet",
+      "url": "https://nikhilkumar.media/writing/bots-might-save-the-dead-internet",
+      "title": "Bots Might Save the Dead Internet",
+      "summary": "Using AI agents to curate high-quality content from the internet wasteland, creating personalized oases of discovery",
+      "content_text": "\nThe 2026 internet is a vast wasteland, filled with trash and hostile actors ready to yell at you, steal your belongings, or hypnotize you into stupor.\n\nBut along those Mad Max-like badlands are some oases of wonder; around the barren bends are jungles full of exotic ideas and rejuvenating tonics.\n\nThe mission is to avoid the bad stuff and find the good.\n\nMost of us internet users have not equipped the hazmat suits that seem necessary to go out on our own excursions to find wonders. Without prot",
+      "date_published": "2026-02-23T00:00:00.000Z",
+      "tags": [
+        "ai",
+        "bots",
+        "curation",
+        "internet",
+        "social-media"
+      ]
+    },
+    {
+      "id": "https://nikhilkumar.media/writing/four-books-i-cant-stop-recommending",
+      "url": "https://nikhilkumar.media/writing/four-books-i-cant-stop-recommending",
+      "title": "Four Books I Can't Stop Recommending",
+      "summary": "Books that shifted how I see intelligence, loss, symbiosis, and food systems",
+      "content_text": "\nA friend asked me for book recommendations recently, and I realized I've been giving the same recommendations over and over, in some cases for years now. These four books have lodged themselves in my brain and shifted how I see something fundamental: how we understand intelligence, how we process loss, how we relate to other species, how we build food systems.\n\nThe list covers a lot of ground: A 1970s thought experiment about robot psychology. A formally experimental novel about Abraham Lincoln",
+      "date_published": "2026-01-10T00:00:00.000Z",
+      "tags": [
+        "books",
+        "recommendations",
+        "ai",
+        "nature",
+        "food"
+      ]
+    },
+    {
+      "id": "https://nikhilkumar.media/writing/the-age-of-artisanal-software",
+      "url": "https://nikhilkumar.media/writing/the-age-of-artisanal-software",
+      "title": "The Age of Artisanal Software",
+      "summary": "As software creation becomes cheaper, we're entering an era of expressive, boutique apps built for creative expression rather than scale",
+      "content_text": "\nAn app that only works on February 29th.\n\nA scavenger hunt through dim sum parlors with guides for each dish.\n\nA multiplayer game designed for a single dinner party that self-destructs when the evening ends.\n\nThese aren't billion-dollar startup ideas. They're something potentially more interesting: software built for creative expression, not because they're going to give their investors 100x. In fact, they don't need investors at all.\n\nBuilding software is cheaper than it's ever been. You don't",
+      "date_published": "2025-09-16T00:00:00.000Z",
+      "tags": [
+        "software",
+        "creativity",
+        "ai",
+        "business-models",
+        "craftsmanship"
+      ]
+    },
+    {
+      "id": "https://nikhilkumar.media/writing/why-were-launching-etched",
+      "url": "https://nikhilkumar.media/writing/why-were-launching-etched",
+      "title": "Why we're launching Etched",
+      "summary": "A writing platform where authors own their content through blockchain, not platform databases",
+      "content_text": "\nEarlier this evening, [Jon](http://x.com/jnwng), [Adil](http://x.com/adilmajid), and [I](http://x.com/nkumar23) [launched Etched](https://x.com/etched_id/status/1769899458018373704?s=20) – a protocol that displays your writing while allowing authors to own what they write.\n\nPut another way – [Etched](https://www.etched.id/EtCH6Y9yAamG9BibkKJtGpXXh7MSnVBZVQ1q9hAGyXmW) looks like a writing platform, but reads its data from the Solana blockchain rather than its own database. Compare this with basi",
+      "date_published": "2024-03-19T00:00:00.000Z",
+      "tags": [
+        "blockchain",
+        "writing",
+        "ownership",
+        "solana",
+        "web3"
+      ]
+    },
+    {
+      "id": "https://nikhilkumar.media/writing/a-studio-music-dirt-on-the-floors",
+      "url": "https://nikhilkumar.media/writing/a-studio-music-dirt-on-the-floors",
+      "title": "A studio, music, dirt on the floors, and touch sensors",
+      "summary": "Building an interactive sound installation where visitors walk on soil embedded with sensors that control the music",
+      "content_text": "\nAfter spending the last 6 months \"working\" from home, I found a studio! I've been here two weeks and it's already been miraculous for focus and inspiration. There's something special about having a separation of spaces, a nice little walk to clear the head, and a room where I can do pretty much *anything*.\n\nThe studio is inside an art gallery called [Black Brick Project](https://www.blackbrickproject.com/). When I moved in, I found out that we'll have an open studio + new gallery starting ~Apri",
+      "date_published": "2024-02-23T00:00:00.000Z",
+      "tags": [
+        "art",
+        "music",
+        "installation",
+        "arduino",
+        "creative-coding"
+      ]
+    },
+    {
+      "id": "https://nikhilkumar.media/writing/musings-from-an-airport",
+      "url": "https://nikhilkumar.media/writing/musings-from-an-airport",
+      "title": "Musings From an Airport",
+      "summary": "A note from 2017 about identity, language, and unexpected encounters at airport security",
+      "content_text": "\nI don't keep a diary on a regular basis, but when I do, I either use the Notes app on my phone or a Google Doc when I'm on my computer. I recently decided to organize old notes found some fun stuff.\n\nHere's a story from 2017 when I was traveling frequently for work:\n\nAs I handed my ID to the TSA agent at the security gate, he said something that sounded like \"que sejo\".\n\nI repeated what I heard a few times. Que sejo… what does \"sejo\" mean?\n\n\"Ah, Hindi\" I nodded with a laborious smile, as I real",
+      "date_published": "2023-10-30T00:00:00.000Z",
+      "tags": [
+        "personal",
+        "identity",
+        "travel",
+        "culture"
+      ]
+    },
+    {
+      "id": "https://nikhilkumar.media/writing/first-2-months",
+      "url": "https://nikhilkumar.media/writing/first-2-months",
+      "title": "First 2 months",
+      "summary": "Reflections on the first 10 weeks of sabbatical—road trips, physical health, cooking, making music, and learning by doing",
+      "content_text": "\nI've been on sabbatical for ~ 10 weeks. What have I been up to?\n\nI took a 3 week road trip with my dad through national parks and open country.\n\n![Road trip map](https://substackcdn.com/image/fetch/$s_!2fMq!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5dd00873-ebf1-4c3e-b3f4-33043de4243a_1600x690.png)\n\nI got a personal trainer and began taking my physical health more seriously.\n\nI helped eviscerate chickens on [a farm](https://k",
+      "date_published": "2023-10-23T00:00:00.000Z",
+      "tags": [
+        "personal",
+        "sabbatical",
+        "reflection",
+        "creative-practice"
+      ]
+    },
+    {
+      "id": "https://nikhilkumar.media/writing/an-invocation",
+      "url": "https://nikhilkumar.media/writing/an-invocation",
+      "title": "An Invocation",
+      "summary": "Blessing a new creative space, marking the beginning of a sabbatical journey",
+      "content_text": "\nOm! Earth, Sky, Heaven.\nWe meditate on the\nbrilliant light of the Sun:\nMay it illuminate our minds!\n\n—  Gayatri Mantra, Rigveda 3.62.10[[3]](https://en.wikipedia.org/wiki/Prayer_in_Hinduism#cite_note-FOOTNOTEBeck2006-4)\n\nŌṃ bhūr bhuvaḥ svaḥ\ntat savitur vareṇyaṃ\nbhargo devasya dhīmahi\ndhiyo yo naḥ pracodayāt.\n\nॐ भूर्भुवस्व:\nतत्सवितुर्वरेण्यम् ।\nभर्गो देवस्य धीमहि ।\nधियो यो न: प्रचोदयात् ॥\n\nI moved to Houston in 1997 with my parents and brother. My maternal grandparents, who lived near us in New ",
+      "date_published": "2023-10-16T00:00:00.000Z",
+      "tags": [
+        "personal",
+        "beginning",
+        "sabbatical",
+        "intention"
+      ]
+    },
+    {
+      "id": "https://nikhilkumar.media/writing/new-blogging-home",
+      "url": "https://fullstackhuman.substack.com",
+      "title": "New blogging home (for now)",
+      "summary": "Moving to Substack for more frequent writing",
+      "content_text": "\nI'll be posting more frequently on Substack until I inevitably self-host again at some point in the future. Check out my first post [here](https://fullstackhuman.substack.com?r=16q5s&utm_medium=web&utm_source=navbar)!\n",
+      "date_published": "2023-10-16T00:00:00.000Z"
+    },
+    {
+      "id": "https://nikhilkumar.media/writing/digital-currencies-blockchain",
+      "url": "https://nikhilkumar.media/writing/digital-currencies-blockchain",
+      "title": "Digital Currencies, Blockchain, Future of Finance Reaction 2",
+      "summary": "Exploring protein folding as a useful proof-of-work mechanism for blockchain",
+      "content_text": "\n*From October 2020// reaction essay for NYU Stern/Law School Digital Currency, Blockchain, Future of Finance course with Drew Hinkes and David Yermack*\n\nBitcoin has come under fire for a whole host of issues: its energy consumption, the political ideology of many enthusiasts, its volatility, the shady transactions that fueled early usage, the potentially unwarranted hype, and so on. We've picked apart a number of these critiques in class through a much more nuanced prism. One critique that I th",
+      "date_published": "2020-11-16T00:00:00.000Z"
+    },
+    {
+      "id": "https://nikhilkumar.media/writing/thesis-musings-2",
+      "url": "https://nikhilkumar.media/writing/thesis-musings-2",
+      "title": "Thesis Musings 2: Potential Pivot and Clarification",
+      "summary": "Defining biodesign and developing a decomposition design framework",
+      "content_text": "\n## Reflection\n\nThis week I had some thoughts that might lead me down a path to a clearer thesis topic. I was interviewed by a group of Penn Integrated Product Design grad students about my Biodesign Competition project. At one point, they asked me if I considered myself a biodesigner, and I hesitated, and ultimately said no. Why? I'll come back to that later.\n\nI studied decision processes and public policy in undergrad. When I graduated in 2010, there were very few jobs called \"UX Designer.\" In",
+      "date_published": "2020-11-16T00:00:00.000Z"
     },
     {
       "id": "https://nikhilkumar.media/work/microbial-memories",
