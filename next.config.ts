@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
+const isExport = process.env.NEXT_OUTPUT === "export";
+
 const nextConfig: NextConfig = {
-  // Route handlers (feeds) require server mode; Vercel handles this natively
+  ...(isExport ? { output: "export" } : {}),
+  images: {
+    unoptimized: true, // Required for static export
+  },
 };
 
 export default nextConfig;

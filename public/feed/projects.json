@@ -1,0 +1,72 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Nikhil Kumar — Projects",
+  "home_page_url": "https://nikhilkumar.media",
+  "feed_url": "https://nikhilkumar.media/feed/projects.json",
+  "description": "Projects by Nikhil Kumar",
+  "authors": [
+    {
+      "name": "Nikhil Kumar",
+      "url": "https://nikhilkumar.media"
+    }
+  ],
+  "language": "en-US",
+  "items": [
+    {
+      "id": "https://nikhilkumar.media/work/microbial-memories",
+      "url": "https://nikhilkumar.media/work/microbial-memories",
+      "title": "Microbial Memories",
+      "summary": "A reflection on the possibilities of microbiomes to be used as a form of cultural archive",
+      "content_text": "\n[Microbial Memories](https://www.timeplaceculture.com) is a reflection on the possibilities of microbiomes to be used as a form of cultural archive. Based on the emerging science linking microbiomes to terroir in wine and other foods, we imagine a future where we can capture place and time with the microorganisms living in that moment.\n\nWe initially presented this project as a submission in the 2020 Biodesign Competition, where we won the Science Sandbox Prize for Public Engagement.\n\nWe then de",
+      "date_published": "2020-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "https://nikhilkumar.media/work/quarantine-dreams",
+      "url": "https://nikhilkumar.media/work/quarantine-dreams",
+      "title": "Quarantine Dreams",
+      "summary": "Music video capturing life in NYC during lockdown, created with ML-generated visuals",
+      "content_text": "\n\"Nikhil Kumar presents life in New York City at the height of lockdown, from March through May 2020, from his bedroom in the Lower East Side. As ambulance sirens were going off seemingly every minute and the city descended into a kind of physical and spiritual sickness, Kumar found himself beginning to have strange dreams. These dreams are channeled into the music video, with violin, guitar, and sampling by the artist.\" - As described in [Agora Magazine, Vol 1](https://www.agoramag.org/issue-on",
+      "date_published": "2020-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "https://nikhilkumar.media/work/shift",
+      "url": "https://nikhilkumar.media/work/shift",
+      "title": "SHIFT",
+      "summary": "Interactive multimedia project",
+      "content_text": "\n[Content coming soon]\n",
+      "date_published": "2020-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "https://nikhilkumar.media/work/app",
+      "url": "https://nikhilkumar.media/work/app",
+      "title": "App",
+      "summary": "Bite-sized learning app built with React Native for restaurant staff training",
+      "content_text": "\nWhile I was working at Coursera, one of the hats I wore was as the Partnerships team's liaison to our engineering product team responsible for designing the future of our learning experiences on the platfrom. On the team, we thought about how we could redefine assessments and direct learning content (like lectures and readings) for the internet age. One of the ideas we returned to over and over was chunking learning units into smaller pieces that could fit into any block of time available to st",
+      "date_published": "2015-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "https://nikhilkumar.media/work/food",
+      "url": "https://nikhilkumar.media/work/food",
+      "title": "Food",
+      "summary": "Professional chef work, fermentation experiments, and cooking as a medium of synthesis",
+      "content_text": "\nI use cooking as an opportunity to learn: about science; about cities and cultures, about my family history; about local ingredients and minimizing waste. Cooking is my medium of synthesis where ideas from different walks of life combine like the items in a recipe themselves.\n\nIn 2015 I became a professional chef and helped open Pondicheri Cafe in the Flatiron District in NYC. During my time in the kitchen, I not only continued to deepen my understanding of technique, I also saw the very real i",
+      "date_published": "2015-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "https://nikhilkumar.media/work/writing-portfolio",
+      "url": "https://nikhilkumar.media/work/writing-portfolio",
+      "title": "Writing",
+      "summary": "Essays on career transitions, identity, and family",
+      "content_text": "\n[Coursera to Chef](https://medium.com/@nkumar23/i-m-leaving-coursera-to-become-a-chef-4e4de0fee1e9) - This piece is a reflection on my decision to go from the tech world into the kitchen, and the meta-skills that I was developing along the way.\n\n[The Untold Story of Indians in America](https://medium.com/@nkumar23/the-untold-story-of-indians-in-america-e000cccb6e95) - Did you know Indians were banned from migrating to the USA for a good chunk of the 20th century? I didn't until I did some resea",
+      "date_published": "2012-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "https://nikhilkumar.media/work/teach-for-america",
+      "url": "https://nikhilkumar.media/work/teach-for-america",
+      "title": "Teach for America",
+      "summary": "Teaching statistics, economics, and leading innovative projects at KIPP Houston High School",
+      "content_text": "\nI began my professional career in 2010 as a teacher, where I taught Statistics, Pre-Calculus, AP Government and Economics at [KIPP Houston High School](https://kipphouston.org/khhs) as a [Teach for America](https://www.teachforamerica.org/) corps member. This followed years of volunteering in schools during high school and university, where I concentrated in Decision Processes- studying how people learn and make decisions- and began to develop a love for working with students and their families",
+      "date_published": "2010-01-01T00:00:00.000Z"
+    }
+  ]
+}

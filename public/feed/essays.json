@@ -1,0 +1,27 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Nikhil Kumar — Essays",
+  "home_page_url": "https://nikhilkumar.media",
+  "feed_url": "https://nikhilkumar.media/feed/essays.json",
+  "description": "Essays by Nikhil Kumar",
+  "authors": [
+    {
+      "name": "Nikhil Kumar",
+      "url": "https://nikhilkumar.media"
+    }
+  ],
+  "language": "en-US",
+  "items": [
+    {
+      "id": "https://nikhilkumar.media/writing/hello-world",
+      "url": "https://nikhilkumar.media/writing/hello-world",
+      "title": "Hello World",
+      "summary": "A placeholder post to test the content system.",
+      "content_text": "\nThis is a placeholder post. Real content coming soon.\n",
+      "date_published": "2026-03-01T00:00:00.000Z",
+      "tags": [
+        "meta"
+      ]
+    }
+  ]
+}
