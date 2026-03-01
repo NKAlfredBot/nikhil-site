@@ -1,7 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { useState } from "react";
 
 const links = [
   { href: "/", label: "Home" },
@@ -11,43 +8,22 @@ const links = [
 ];
 
 export function Nav() {
-  const [hoveredLink, setHoveredLink] = useState<string | null>(null);
-
   return (
-    <nav className="flex items-center justify-between pb-4 border-b" style={{ borderColor: "var(--color-border)" }}>
-      <Link 
-        href="/" 
-        className="text-lg font-medium no-underline"
-        style={{ 
-          fontFamily: "'Crimson Pro', Georgia, serif",
-          color: "var(--color-text)"
-        }}
+    <nav className="flex items-center justify-between pb-6" style={{ borderBottom: "1px solid var(--color-border)" }}>
+      <Link
+        href="/"
+        className="no-underline text-lg"
+        style={{ fontFamily: "var(--font-serif)", fontWeight: 500, color: "var(--color-text)" }}
       >
         Nikhil Kumar
       </Link>
-      <div 
-        className="flex gap-6 text-sm" 
-        style={{ 
-          fontFamily: "'Inter', sans-serif",
-          fontSize: "0.7rem",
-          letterSpacing: "0.15em",
-          textTransform: "uppercase" as const,
-          color: "var(--color-muted)"
-        }}
-      >
+      <div className="flex gap-5" style={{ fontFamily: "var(--font-sans)", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase" as const }}>
         {links.map((link) => (
           <Link
             key={link.href}
             href={link.href}
             className="no-underline transition-colors"
-            style={{ 
-              color: hoveredLink === link.href ? "var(--color-text)" : "inherit",
-              minHeight: "44px",
-              display: "inline-flex",
-              alignItems: "center"
-            }}
-            onMouseEnter={() => setHoveredLink(link.href)}
-            onMouseLeave={() => setHoveredLink(null)}
+            style={{ color: "var(--color-muted)" }}
           >
             {link.label}
           </Link>

@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Nav } from "@/components/nav";
-import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Nikhil Kumar",
-  description: "Personal site of Nikhil Kumar",
+  description: "Builder, writer, chef, teacher. Working at the intersection of technology, art, and culture.",
 };
 
 export default function RootLayout({
@@ -15,20 +14,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body className="antialiased">
-        <div className="mx-auto max-w-2xl px-6 py-12 md:py-20">
+        <div className="mx-auto max-w-2xl px-8 py-12 md:px-6 md:py-20">
           <Nav />
           <main className="mt-12">{children}</main>
-          <Footer />
         </div>
+        <footer className="page-footer">
+          <p>Nikhil Kumar — Fullstack Human</p>
+          <p className="footer-note">
+            This site is aware that it is a site. It tries not to make a big deal about it.
+          </p>
+        </footer>
       </body>
     </html>
   );

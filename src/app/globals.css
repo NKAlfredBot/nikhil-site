@@ -1,212 +1,114 @@
-/* Google Fonts - Crimson Pro, Inter, JetBrains Mono */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @import "tailwindcss";
 
 :root {
-  /* DFW Color System */
-  --dfw-beige: hsl(45, 15%, 92%);
-  --dfw-gray-blue: hsl(200, 10%, 85%);
-  --dfw-manila: hsl(30, 10%, 75%);
-  --dfw-white: hsl(0, 0%, 98%);
-  --dfw-dark: hsl(0, 0%, 15%);
-  --dfw-blue: hsl(210, 60%, 45%);
-  --dfw-red: hsl(350, 70%, 50%);
-  --dfw-link: hsl(210, 80%, 40%);
-  --dfw-text: hsl(0, 0%, 18%);
-  --dfw-text-secondary: hsl(0, 0%, 35%);
-  --dfw-text-tertiary: hsl(0, 0%, 50%);
-  
-  /* Semantic mappings */
-  --color-bg: var(--dfw-white);
-  --color-text: var(--dfw-text);
-  --color-muted: var(--dfw-text-secondary);
-  --color-accent: var(--dfw-blue);
-  --color-border: hsla(0, 0%, 0%, 0.1);
+  /* Clean palette: white/cream + dark grey + light blue pops */
+  --color-bg: #FAFAFA;
+  --color-bg-alt: #F5F3F0;
+  --color-text: #1A1A1A;
+  --color-muted: #6B6B6B;
+  --color-faint: #999999;
+  --color-accent: #5B9BD5;
+  --color-accent-hover: #4A87C0;
+  --color-link: #5B9BD5;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-card-bg: #F8F6F3;
+
+  --font-serif: 'Crimson Pro', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Dark mode with warm DFW colors */
-    --dfw-beige: hsl(45, 12%, 18%);
-    --dfw-gray-blue: hsl(200, 8%, 25%);
-    --dfw-manila: hsl(30, 8%, 30%);
-    --dfw-white: hsl(0, 0%, 15%);
-    --dfw-dark: hsl(0, 0%, 92%);
-    --dfw-blue: hsl(210, 60%, 60%);
-    --dfw-red: hsl(350, 70%, 60%);
-    --dfw-link: hsl(210, 80%, 65%);
-    --dfw-text: hsl(0, 0%, 92%);
-    --dfw-text-secondary: hsl(0, 0%, 70%);
-    --dfw-text-tertiary: hsl(0, 0%, 55%);
-    
-    --color-bg: var(--dfw-white);
-    --color-text: var(--dfw-text);
-    --color-muted: var(--dfw-text-secondary);
-    --color-accent: var(--dfw-blue);
-    --color-border: hsla(0, 0%, 100%, 0.1);
+    --color-bg: #111111;
+    --color-bg-alt: #1A1A1A;
+    --color-text: #E8E8E8;
+    --color-muted: #999999;
+    --color-faint: #666666;
+    --color-accent: #7CB8E8;
+    --color-accent-hover: #9BCBF0;
+    --color-link: #7CB8E8;
+    --color-border: rgba(255, 255, 255, 0.08);
+    --color-card-bg: #1A1917;
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   background: var(--color-bg);
   color: var(--color-text);
-  font-family: 'Crimson Pro', Georgia, serif;
+  font-family: var(--font-serif);
   font-size: 18px;
-  line-height: 1.6;
-  text-align: justify;
-  hyphens: auto;
-}
-
-/* Switch to left-aligned on very small screens */
-@media (max-width: 400px) {
-  body {
-    text-align: left;
-  }
+  line-height: 1.65;
 }
 
 a {
-  color: var(--dfw-link);
+  color: var(--color-link);
   text-decoration: underline;
-  text-decoration-color: var(--dfw-link);
   text-underline-offset: 3px;
+  text-decoration-color: color-mix(in srgb, var(--color-link) 40%, transparent);
   transition: all 0.2s ease;
 }
 
 a:hover {
-  color: hsl(210, 80%, 30%);
-  text-decoration-color: hsl(210, 80%, 30%);
+  color: var(--color-accent-hover);
+  text-decoration-color: var(--color-accent-hover);
 }
 
-/* Component Label Style (mono, uppercase, tracked) */
-.component-label {
-  font-family: 'JetBrains Mono', monospace;
+/* Label style — mono, uppercase, tracked */
+.label {
+  font-family: var(--font-mono);
   font-size: 0.7rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--dfw-text-tertiary);
-  margin-bottom: 15px;
+  color: var(--color-faint);
 }
 
-/* Page Header Style */
-.page-header {
-  text-align: center;
-  padding: 80px 20px 60px;
-  background: var(--dfw-beige);
-  border-bottom: 1px solid var(--color-border);
-  margin: -3rem -1.5rem 0;
-}
-
-@media (max-width: 768px) {
-  .page-header {
-    padding: 60px 15px 40px;
-  }
-}
-
-.page-header h1 {
-  font-weight: 500;
-  font-size: 2.5rem;
-  letter-spacing: 0.02em;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .page-header h1 {
-    font-size: 2rem;
-  }
-}
-
-.page-header p {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 0.8rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--dfw-text-secondary);
-  text-align: center;
-}
-
-/* Meta-card styling */
+/* Meta-card for project entries */
 .meta-card {
-  background: var(--dfw-beige);
+  background: var(--color-card-bg);
   border: 1px solid var(--color-border);
+  padding: 28px 32px;
   position: relative;
-  overflow: hidden;
-  padding: 35px;
-  margin: 20px 0;
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .meta-card:hover {
-  box-shadow: 0 4px 12px hsla(0, 0%, 0%, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
-.meta-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    -45deg,
-    transparent,
-    transparent 10px,
-    hsla(0, 0%, 0%, 0.02) 10px,
-    hsla(0, 0%, 0%, 0.02) 20px
-  );
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+/* Footnote number style */
+.fn-number {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  margin-right: 0.75em;
 }
 
-.meta-card:hover::before {
-  opacity: 1;
-}
-
-.meta-card-version {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.65rem;
-  color: var(--dfw-text-tertiary);
-}
-
-/* Footer styles */
+/* Footer */
 .page-footer {
   text-align: center;
-  padding: 60px 20px;
-  background: var(--dfw-beige);
+  padding: 48px 24px;
+  background: var(--color-bg-alt);
   border-top: 1px solid var(--color-border);
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.75rem;
-  color: var(--dfw-text-tertiary);
-  margin: 4rem -1.5rem -3rem;
+  color: var(--color-faint);
 }
 
 .footer-note {
+  font-family: var(--font-serif);
   font-style: italic;
-  max-width: 500px;
-  margin: 15px auto 0;
+  max-width: 480px;
+  margin: 12px auto 0;
   line-height: 1.6;
+  color: var(--color-muted);
 }
 
-/* Mono text utility */
-.text-mono {
-  font-family: 'JetBrains Mono', monospace;
-}
-
-/* Touch targets for mobile */
+/* Mobile touch targets */
 @media (hover: none) and (pointer: coarse) {
-  a {
-    padding: 5px 0;
-    min-height: 44px;
-    display: inline-flex;
-    align-items: center;
-  }
+  a { min-height: 44px; }
 }
